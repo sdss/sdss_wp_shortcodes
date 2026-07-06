@@ -62,3 +62,22 @@
  *** 4.0. New Day Zero for everything on sdss.org
  *** 4.1. Display DR19 VACS on testng site
  *** 4.1.1. Display DR19 VACs only on DR19 VAC page (not DR18) 
+ *** 4.2. Get tutorials json file
+ *** 4.2.1. Get tutorials json file, testng edition
+ *** 4.2.2. Display info for each tutorial (tags, DRs, authors, descriptions, last modifieds)
+ *** 4.2.3. Format single tutorial
+ *** 4.2.4. ?id= is string instead of number
+ *** 4.2.4.1. Created placeholder files for tutorial search js code
+ *** 4.2.4.2. Created tutorial_search shortcode
+ *** 4.3. Tutorial search function works for Surveys
+ *** 4.3.1. Moved JSON-ified tutorials to tutorials/python
+ *** 4.4. Fixed logic of checking/unchecking boxes in tutorial search
+ *** 4.4.1. Fixed clear all tags and select all tags buttons
+ *** 4.4.2. Surveys/tags behavior reqeusted by A-M
+ *** 4.4.3. No longer show identifier on dev site
+ *** 4.4.4. Removed hard-coded devng url
+ *** 4.4.5. CSS-ified tags on tutorial list
+ *** 4.4.5.1. Moved authors below description and got author list formatted with commas
+ *** 4.5. CSS-ified tutorial tags for both list and single tutorial display
+ *** 4.5.1. Label of filter box changed to "Filter Python Tutorials"
+ *** 4.6. Fixed TOC bug with $target_regex = "/id\s*=\s*(\'|\")[a-zA-Z0-9]+(\'|\")/";

@@ -12,51 +12,59 @@ function vac_search() {
 
 	$thehtml .= "<div class='vac-filter-all-checkboxes'>";
 
-	$thehtml .= "<div class='vac-filter'>";
-	$thehtml .= "Surveys";
-	$thehtml .= "<div class='vac-filter-checkbox-list'>";
-	$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
-	$thehtml .= "<input type='checkbox' id='cb-vac-tag-bhm' name='cb-vac-tag-bhm' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-bhm\");' />";
-	$thehtml .= "<label for='cb-vac-tag-bhm' class='tooltip'>BHM<span class='tooltiptext'>Black Hole Mapper</span></label>";
-	$thehtml .= "</span>";
-	$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
-	$thehtml .= "<input type='checkbox' id='cb-vac-tag-apogee-2' name='cb-vac-tag-apogee-2' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-apogee-2\");' />";
-	$thehtml .= "<label for='cb-vac-tag-apogee-2'>APOGEE-2</label>";	
-	$thehtml .= "</span>";
-	$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
-	$thehtml .= "<input type='checkbox' id='cb-vac-tag-eboss' name='cb-vac-tag-eboss' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-eboss\");' />";
-	$thehtml .= "<label for='cb-vac-tag-eboss'>eBOSS</label>";
-	$thehtml .= "</span>";
-	$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
-	$thehtml .= "<input type='checkbox' id='cb-vac-tag-manga' name='cb-vac-tag-manga' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-manga\");' />";
-	$thehtml .= "<label for='cb-vac-tag-manga'>MaNGA</label>";
-	$thehtml .= "</span>";
-	$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
-	$thehtml .= "<input type='checkbox' id='cb-vac-tag-mastar' name='cb-vac-tag-mastar' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-mastar\");' />";
-	$thehtml .= "<label for='cb-vac-tag-mastar'>MaStar</label>";
-	$thehtml .= "</span>";
-	$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
-	$thehtml .= "<input type='checkbox' id='cb-vac-tag-spiders' name='cb-vac-tag-spiders' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-spiders\");' />";
-	$thehtml .= "<label for='cb-vac-tag-spiders'>SPIDERS</label>";
-	$thehtml .= "</span>";
-	$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
-	$thehtml .= "<input type='checkbox' id='cb-vac-tag-boss' name='cb-vac-tag-boss' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-boss\");' />";
-	$thehtml .= "<label for='cb-vac-tag-boss'>BOSS</label>";
-	$thehtml .= "</span>";
-	$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
-	$thehtml .= "<input type='checkbox' id='cb-vac-tag-segue' name='cb-vac-tag-spiders' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-segue\");' />";
-	$thehtml .= "<label for='cb-vac-tag-segue'>SEGUE</label>";
-	$thehtml .= "</span>";
-	$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
-	$thehtml .= "<input type='checkbox' id='cb-vac-tag-legacy' name='cb-vac-tag-legacy' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-legacy\");' />";
-	$thehtml .= "<label for='cb-vac-tag-legacy'>Legacy</label>";
-	$thehtml .= "</span>";
-	$thehtml .= "</div>";  // end vac-filter-checkbox-list class for surveys
-	$thehtml .= "</div>";  // end vac-filter class for surveys
+		$thehtml .= "<div class='vac-filter'>";
+		$thehtml .= "<span style='color:white;'>Surveys</span>";
+			$thehtml .= "<div class='vac-filter-checkbox-list'>";
+				$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
+					$thehtml .= "<input type='checkbox' id='cb-vac-tag-surveywide' name='cb-vac-tag-surveywide' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-surveywide\");' />";
+					$thehtml .= "<label for='cb-vac-tag-surveywide'>Survey-wide</label>";	
+				$thehtml .= "</span>";
+				$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
+					$thehtml .= "<input type='checkbox' id='cb-vac-tag-mwm' name='cb-vac-tag-mwm' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-mwm\");' />";
+					$thehtml .= "<label for='cb-vac-tag-mwm' class='tooltip'>MWM<span class='tooltiptext'>Milky Way Mapper</span></label>";
+				$thehtml .= "</span>";
+				$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
+					$thehtml .= "<input type='checkbox' id='cb-vac-tag-bhm' name='cb-vac-tag-bhm' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-bhm\");' />";
+					$thehtml .= "<label for='cb-vac-tag-bhm' class='tooltip'>BHM<span class='tooltiptext'>Black Hole Mapper</span></label>";
+				$thehtml .= "</span>";
+				$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
+					$thehtml .= "<input type='checkbox' id='cb-vac-tag-apogee-2' name='cb-vac-tag-apogee-2' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-apogee-2\");' />";
+					$thehtml .= "<label for='cb-vac-tag-apogee-2'>APOGEE-2</label>";	
+				$thehtml .= "</span>";
+				$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
+					$thehtml .= "<input type='checkbox' id='cb-vac-tag-eboss' name='cb-vac-tag-eboss' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-eboss\");' />";
+					$thehtml .= "<label for='cb-vac-tag-eboss'>eBOSS</label>";
+				$thehtml .= "</span>";
+				$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
+					$thehtml .= "<input type='checkbox' id='cb-vac-tag-manga' name='cb-vac-tag-manga' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-manga\");' />";
+					$thehtml .= "<label for='cb-vac-tag-manga'>MaNGA</label>";
+				$thehtml .= "</span>";
+				$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
+					$thehtml .= "<input type='checkbox' id='cb-vac-tag-mastar' name='cb-vac-tag-mastar' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-mastar\");' />";
+					$thehtml .= "<label for='cb-vac-tag-mastar'>MaStar</label>";
+				$thehtml .= "</span>";
+				$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
+					$thehtml .= "<input type='checkbox' id='cb-vac-tag-spiders' name='cb-vac-tag-spiders' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-spiders\");' />";
+					$thehtml .= "<label for='cb-vac-tag-spiders'>SPIDERS</label>";
+				$thehtml .= "</span>";
+				$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
+					$thehtml .= "<input type='checkbox' id='cb-vac-tag-boss' name='cb-vac-tag-boss' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-boss\");' />";
+					$thehtml .= "<label for='cb-vac-tag-boss'>BOSS</label>";
+				$thehtml .= "</span>";
+				$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
+					$thehtml .= "<input type='checkbox' id='cb-vac-tag-segue' name='cb-vac-tag-spiders' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-segue\");' />";
+					$thehtml .= "<label for='cb-vac-tag-segue'>SEGUE</label>";
+				$thehtml .= "</span>";
+				$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
+					$thehtml .= "<input type='checkbox' id='cb-vac-tag-legacy' name='cb-vac-tag-legacy' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-legacy\");' />";
+					$thehtml .= "<label for='cb-vac-tag-legacy'>Legacy</label>";
+				$thehtml .= "</span>";
+			$thehtml .= "</div>";  // end vac-filter-checkbox-list class for surveys
+		$thehtml .= "</div>";  // end vac-filter class for surveys
 
 
 	$thehtml .= "<div class='vac-filter'>";
-	$thehtml .= "Object classes";
+	$thehtml .= "<span style='color:white;'>Object classes</span>";
 	$thehtml .= "<div class='vac-filter-checkbox-list'>";
 	$thehtml .= "<span class='vac-filter-checkbox-with-label'>";
 	$thehtml .= "<input type='checkbox' id='cb-vac-tag-star' name='cb-vac-tag-star' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-star\");' />";
@@ -75,7 +83,7 @@ function vac_search() {
 	$thehtml .= "</div>";  // end vac-filter class for object classes
 
 	$thehtml .= "<div class='vac-filter'>";
-	$thehtml .= "Available in";
+	$thehtml .= "<span style='color:white;'>Available in</span>";
 	$thehtml .= "<div class='vac-filter-checkbox-list'>";
 	$thehtml .= "<span class='vac-filter-checkbox-with-label'>"; 
 	$thehtml .= "<input type='checkbox' id='cb-vac-tag-cas-yes' name='cb-vac-tag-cas-yes' checked class='vac-filter-checkbox' onclick='javascript:show_hide_vac(\"vac-tag-cas-yes\");' />";

@@ -50,8 +50,6 @@ function show_toc($atts) {
 
         $thetoc = '';
 
-        //return "<font color='red'>".$content."</font>";
-        //echo "<font color='red'>regex = ".$regex."</font>";
         if (preg_match_all($regex, $content, $matches)) {
            //echo "<font color='red'>regex = REGEX FOUND</font>";
 
@@ -86,13 +84,15 @@ function show_toc($atts) {
             //$thetoc .= "<p style='color:red;'>".htmlentities($regex)."</p>";
             foreach ($matches as $thismatch) {
                 foreach ($thismatch as $thistag) {
-
+                    
                     $whatlevel = htmlspecialchars($thistag[2]);
 
                     if (in_array($whatlevel, $wporg_atts['headers_to_display'])) {  // only show TOC items for headers specified in headers_to_display list
                         $thetoc .= "<li class='forh".$whatlevel."' >";
                     
-                        $target_regex = "/id\s*=\s*(\'|\").*(\'|\")/";
+                        $target_regex = "/id\s*=\s*(\'|\")[a-zA-Z0-9]+(\'|\")/";
+                        //echo "<p style='color:green;'>".$target_regex."</p>";
+
                         if (preg_match($target_regex, $thistag, $idmatch)) {
                             $thetoc .= "<a href='#".substr(trim($idmatch[0]), 4, -1)."'>";
                         }

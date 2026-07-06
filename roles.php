@@ -2,12 +2,21 @@
 
 
 function show_roles() {
+
+	$sdss_debug = WP_DEBUG;
+	$current_dr_number = CURRENT_DR;
+	$current_dr = "DR".strval($current_dr_number);
+
+	$requested_page_arr = explode('/',$_SERVER['REQUEST_URI']);   // get page requested (relative to top level)    
+
     $thehtml = "";
     if (WHICH_PHASE == 'sdss5') {
-        
-        $roles_data_json = @file_get_contents(  PATH_JSON . 'roles.json' );
+        if ($sdss_debug == 1) {
+            $roles_data_json = @file_get_contents(  PATH_JSON_VACS . 'roles-testng.json' );
+        } else {
+            $roles_data_json = @file_get_contents(  PATH_JSON . 'roles.json' );
+        }
         $roles_data = json_decode( $roles_data_json, true );
-        
 
         foreach ($roles_data['divisions'] as $division_number => $division) {
             $thehtml .= "<h2>" . $division['title'] . "</h2>";

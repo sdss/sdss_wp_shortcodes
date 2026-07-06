@@ -52,7 +52,7 @@ function sdss_pull_json( $branch = 'main', $verbose = False ) {
         make_json_filetree();
     }
     $surveys = array("sdss4", "sdss5");
-    $jsonfiles = array('affiliations', 'architects', 'coco', 'project', 'publications', 'roles', 'vacs', 'vacs-testng', 'leaders', 'members', 'mc', 'sdss5-ac');
+    $jsonfiles = array('affiliations', 'architects', 'coco', 'project', 'publications', 'roles', 'roles-testng', 'vacs', 'vacs-testng', 'leaders', 'members', 'mc', 'sdss5-ac', 'tutorials', 'tutorials-testng');
     chdir('sdss_org_wp_data/');
     foreach ($surveys as $this_survey) {
         if ($verbose) {
