@@ -90,7 +90,7 @@ function show_toc($atts) {
                     if (in_array($whatlevel, $wporg_atts['headers_to_display'])) {  // only show TOC items for headers specified in headers_to_display list
                         $thetoc .= "<li class='forh".$whatlevel."' >";
                     
-                        $target_regex = "/id\s*=\s*(\'|\")[a-zA-Z0-9]+(\'|\")/";
+                        $target_regex = "/id\s*=\s*(\'|\")\S+(\'|\")/";
                         //echo "<p style='color:green;'>".$target_regex."</p>";
 
                         if (preg_match($target_regex, $thistag, $idmatch)) {

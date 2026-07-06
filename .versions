@@ -81,3 +81,4 @@
  *** 4.5. CSS-ified tutorial tags for both list and single tutorial display
  *** 4.5.1. Label of filter box changed to "Filter Python Tutorials"
  *** 4.6. Fixed TOC bug with $target_regex = "/id\s*=\s*(\'|\")[a-zA-Z0-9]+(\'|\")/";
+ *** 4.6.1. Actually fixed TOC bug with $target_regex = "/id\s*=\s*(\'|\")\S+(\'|\")/";
